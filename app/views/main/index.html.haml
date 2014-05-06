@@ -1,0 +1,29 @@
+%h1 Making Players
+%br
+
+%h3 Create a new player
+
+%input#txtName{:type=>"text", :placeholder=>"Name"}
+%input#txtStat{:type=>"text", :placeholder=>"Longest Stat"}
+
+%select#playerType
+	%option Runningback
+	%option Quarterback
+%br
+%button#btnSend Send
+
+%br
+%br
+
+%h3 Showing all current players
+%table
+	%tr.headers
+		%th Name
+		%th Longest Run
+		%th Longest Throw
+
+	-# - @teams.each do |i|
+	-# 	%tr
+	-# 		%td= i.name
+	-# 		%td= i.longest_run
+	-# 		%td= i.longest_throw
