@@ -19,11 +19,11 @@
 %table
 	%tr.headers
 		%th Name
-		%th Longest Run
-		%th Longest Throw
+		%th Best Stat
+		%th Position
 
-	-# - @teams.each do |i|
-	-# 	%tr
-	-# 		%td= i.name
-	-# 		%td= i.longest_run
-	-# 		%td= i.longest_throw
+	- @teams.each do |i|
+		%tr
+			%td= i.name
+			%td= i.stat
+			%td= i.option
